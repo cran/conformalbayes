@@ -1,10 +1,12 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# **conformalbayes** <a href="https://corymccartan.github.io/conformalbayes/"><img src="man/figures/logo.png" align="right" height="138" /></a>
+# **conformalbayes** <a href="https://corymccartan.com/conformalbayes/"><img src="man/figures/logo.png" align="right" height="138" /></a>
 
 <!-- badges: start -->
 
+[![CRAN
+status](https://www.r-pkg.org/badges/version/conformalbayes)](https://CRAN.R-project.org/package=conformalbayes)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![License:
@@ -52,12 +54,12 @@ m = loo_conformal(m)
 pred_ci = predictive_interval(m, newdata=d_test, prob=0.9)
 print(head(pred_ci))
 #>             5%       95%
-#> 1  -0.15888598  5.600095
+#> 1  -0.15888597  5.600095
 #> 29 25.43314599 30.988491
 #> 57 48.67648127 54.182655
 #> 2  -0.09561987  5.447242
 #> 30 25.42970114 30.938488
-#> 72 58.01173187 63.596592
+#> 72 58.01173186 63.596592
 
 # are we covering?
 mean(pred_ci[, "5%"] <= d_test$height &
@@ -66,7 +68,7 @@ mean(pred_ci[, "5%"] <= d_test$height &
 ```
 
 Read more on the [Getting Started
-page](https://corymccartan.github.io/conformalbayes/articles/conformalbayes.html).
+page](https://corymccartan.com/conformalbayes/articles/conformalbayes.html).
 
 ## Citations
 
